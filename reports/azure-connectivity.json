@@ -1,0 +1,37 @@
+{
+  "dns": "verified by user after initial timeout",
+  "tcp_443": "verified by user",
+  "http_status": 200,
+  "deployment_response": {
+    "model": "gpt-6-astra-2026-09-03",
+    "finish_reason": "stop",
+    "reply_is_ok": true
+  },
+  "token_usage": {
+    "completion_tokens": 4,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 37,
+      "engine_ttft_ms": 418,
+      "engine_ttlt_ms": 602,
+      "pre_inference_ms": 93,
+      "service_tbt_ms": 44,
+      "service_ttft_ms": 689,
+      "service_ttlt_ms": 866,
+      "user_visible_ttft_ms": 596
+    },
+    "prompt_tokens": 11,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 15
+  },
+  "latency_seconds": 2.406
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 321,
+  "proposed_development_documents": {
+    "HIGH": "HEALTH-APPOINT-HIGH",
+    "LOW": "INS-POLICY-LOW",
+    "MEDIUM": "BANK-LOAN-MEDIUM"
+  }
+}

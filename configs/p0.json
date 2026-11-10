@@ -1,0 +1,27 @@
+{
+  "runs": 5,
+  "seed": 321,
+  "budgets": {
+    "input_ratio": 8,
+    "output_ratio": 2,
+    "wall_seconds": 300
+  },
+  "thresholds": {
+    "recall": 0.9,
+    "attribute_error": 0.02,
+    "unsupported": 0.02,
+    "conflict_and_mutation_recall": 0.9,
+    "disposition_coverage": 1,
+    "resolved_evidence": 1,
+    "false_merges": 0,
+    "duplicate_keys": 0,
+    "contradicted_absences": 0
+  },
+  "azure": {
+    "concurrency": 2,
+    "timeout_seconds": 60,
+    "max_attempts": 1,
+    "reasoning_effort": "low"
+  },
+  "gate_timeout_seconds": 7200
+}

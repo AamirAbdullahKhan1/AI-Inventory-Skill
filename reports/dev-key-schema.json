@@ -1,0 +1,349 @@
+{
+  "keys": 15,
+  "types": {
+    "$": [
+      "dict"
+    ],
+    "$.ai_components": [
+      "list"
+    ],
+    "$.annotation_scope": [
+      "str"
+    ],
+    "$.annotation_status": [
+      "str"
+    ],
+    "$.application_family": [
+      "str"
+    ],
+    "$.complete_attributes": [
+      "bool"
+    ],
+    "$.complete_relations": [
+      "bool"
+    ],
+    "$.complete_sources": [
+      "bool"
+    ],
+    "$.complexity": [
+      "str"
+    ],
+    "$.conflicts": [
+      "list"
+    ],
+    "$.conflicts[]": [
+      "dict"
+    ],
+    "$.conflicts[].applicability": [
+      "str"
+    ],
+    "$.conflicts[].citations": [
+      "list"
+    ],
+    "$.conflicts[].citations[]": [
+      "dict"
+    ],
+    "$.conflicts[].citations[].doc": [
+      "str"
+    ],
+    "$.conflicts[].citations[].locator": [
+      "str"
+    ],
+    "$.conflicts[].citations[].quote": [
+      "str"
+    ],
+    "$.conflicts[].claims": [
+      "list"
+    ],
+    "$.conflicts[].claims[]": [
+      "str"
+    ],
+    "$.conflicts[].document_resolves": [
+      "bool"
+    ],
+    "$.conflicts[].genuine_conflict": [
+      "bool"
+    ],
+    "$.conflicts[].id": [
+      "str"
+    ],
+    "$.conflicts[].reviewer_questions": [
+      "list"
+    ],
+    "$.conflicts[].reviewer_questions[]": [
+      "str"
+    ],
+    "$.conflicts[].type": [
+      "str"
+    ],
+    "$.document_file": [
+      "str"
+    ],
+    "$.document_id": [
+      "str"
+    ],
+    "$.domain": [
+      "str"
+    ],
+    "$.items": [
+      "list"
+    ],
+    "$.items[]": [
+      "dict"
+    ],
+    "$.items[].aliases": [
+      "list"
+    ],
+    "$.items[].aliases[]": [
+      "str"
+    ],
+    "$.items[].attributes": [
+      "dict"
+    ],
+    "$.items[].attributes.*": [
+      "bool",
+      "list",
+      "str"
+    ],
+    "$.items[].attributes.*[]": [
+      "str"
+    ],
+    "$.items[].category": [
+      "str"
+    ],
+    "$.items[].field_evidence": [
+      "dict"
+    ],
+    "$.items[].field_evidence.*": [
+      "list"
+    ],
+    "$.items[].field_evidence.*[]": [
+      "dict"
+    ],
+    "$.items[].field_evidence.*[].doc": [
+      "str"
+    ],
+    "$.items[].field_evidence.*[].locator": [
+      "str"
+    ],
+    "$.items[].field_evidence.*[].quote": [
+      "str"
+    ],
+    "$.items[].id": [
+      "str"
+    ],
+    "$.items[].name": [
+      "str"
+    ],
+    "$.items[].requirement_ids": [
+      "list"
+    ],
+    "$.items[].requirement_ids[]": [
+      "str"
+    ],
+    "$.items[].sources": [
+      "list"
+    ],
+    "$.items[].sources[]": [
+      "dict"
+    ],
+    "$.items[].sources[].doc": [
+      "str"
+    ],
+    "$.items[].sources[].locator": [
+      "str"
+    ],
+    "$.items[].sources[].quote": [
+      "str"
+    ],
+    "$.missing_information": [
+      "list"
+    ],
+    "$.missing_information[]": [
+      "dict"
+    ],
+    "$.missing_information[].description": [
+      "str"
+    ],
+    "$.missing_information[].documented_as_open_question": [
+      "bool"
+    ],
+    "$.missing_information[].evidence": [
+      "list"
+    ],
+    "$.missing_information[].evidence[]": [
+      "dict"
+    ],
+    "$.missing_information[].evidence[].doc": [
+      "str"
+    ],
+    "$.missing_information[].evidence[].locator": [
+      "str"
+    ],
+    "$.missing_information[].evidence[].quote": [
+      "str"
+    ],
+    "$.missing_information[].id": [
+      "str"
+    ],
+    "$.missing_information[].related_labels": [
+      "list"
+    ],
+    "$.missing_information[].related_labels[]": [
+      "str"
+    ],
+    "$.negative_controls": [
+      "list"
+    ],
+    "$.negative_controls[]": [
+      "dict"
+    ],
+    "$.negative_controls[].evidence": [
+      "list"
+    ],
+    "$.negative_controls[].evidence[]": [
+      "dict"
+    ],
+    "$.negative_controls[].evidence[].doc": [
+      "str"
+    ],
+    "$.negative_controls[].evidence[].locator": [
+      "str"
+    ],
+    "$.negative_controls[].evidence[].quote": [
+      "str"
+    ],
+    "$.negative_controls[].statement": [
+      "str"
+    ],
+    "$.negative_controls[].type": [
+      "str"
+    ],
+    "$.relations": [
+      "list"
+    ],
+    "$.relations[]": [
+      "dict"
+    ],
+    "$.relations[].classification": [
+      "str"
+    ],
+    "$.relations[].evidence": [
+      "list"
+    ],
+    "$.relations[].evidence[]": [
+      "dict"
+    ],
+    "$.relations[].evidence[].doc": [
+      "str"
+    ],
+    "$.relations[].evidence[].locator": [
+      "str"
+    ],
+    "$.relations[].evidence[].quote": [
+      "str"
+    ],
+    "$.relations[].source": [
+      "str"
+    ],
+    "$.relations[].target": [
+      "str"
+    ],
+    "$.relations[].type": [
+      "str"
+    ],
+    "$.structured_requirements": [
+      "list"
+    ],
+    "$.structured_requirements[]": [
+      "dict"
+    ],
+    "$.structured_requirements[].acceptance_criteria": [
+      "list"
+    ],
+    "$.structured_requirements[].acceptance_criteria[]": [
+      "str"
+    ],
+    "$.structured_requirements[].actor": [
+      "str"
+    ],
+    "$.structured_requirements[].dependencies": [
+      "list"
+    ],
+    "$.structured_requirements[].dependencies[]": [
+      "str"
+    ],
+    "$.structured_requirements[].exceptions": [
+      "list"
+    ],
+    "$.structured_requirements[].exceptions[]": [
+      "str"
+    ],
+    "$.structured_requirements[].label_id": [
+      "str"
+    ],
+    "$.structured_requirements[].missing_fields": [
+      "list"
+    ],
+    "$.structured_requirements[].missing_fields[]": [
+      "str"
+    ],
+    "$.structured_requirements[].outcomes": [
+      "list"
+    ],
+    "$.structured_requirements[].outcomes[]": [
+      "str"
+    ],
+    "$.structured_requirements[].preconditions": [
+      "list"
+    ],
+    "$.structured_requirements[].preconditions[]": [
+      "str"
+    ],
+    "$.structured_requirements[].requirement_id": [
+      "str"
+    ],
+    "$.structured_requirements[].rules": [
+      "list"
+    ],
+    "$.structured_requirements[].rules[]": [
+      "str"
+    ],
+    "$.structured_requirements[].steps": [
+      "list"
+    ],
+    "$.structured_requirements[].steps[]": [
+      "str"
+    ],
+    "$.structured_requirements[].trigger": [
+      "str"
+    ],
+    "$.verification": [
+      "list"
+    ],
+    "$.verification[]": [
+      "dict"
+    ],
+    "$.verification[].claim": [
+      "str"
+    ],
+    "$.verification[].evidence": [
+      "list"
+    ],
+    "$.verification[].evidence[]": [
+      "dict"
+    ],
+    "$.verification[].evidence[].doc": [
+      "str"
+    ],
+    "$.verification[].evidence[].locator": [
+      "str"
+    ],
+    "$.verification[].evidence[].quote": [
+      "str"
+    ],
+    "$.verification[].expected_verdict": [
+      "str"
+    ]
+  }
+}
