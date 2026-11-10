@@ -29,12 +29,15 @@ def aggregate(runs, config):
     if len(runs) != config["runs"]:
         raise ValueError("Unexpected run count")
     result = {}
-    for metric, direction in RULES.items():
+    budget_rules = {f"median_{key}": value for key, value in config.get("budgets", {}).items()}
+    thresholds = config["thresholds"] | budget_rules
+    rules = RULES | dict.fromkeys(budget_rules, "max")
+    for metric, direction in rules.items():
         values = [run[metric] for run in runs]
         if not all(type(value) in (int, float) and math.isfinite(value) and value >= 0
                    for value in values):
             raise ValueError("Invalid aggregate input")
-        threshold = config["thresholds"][metric]
+        threshold = thresholds[metric]
         failing = [i + 1 for i, value in enumerate(values)
                    if (value < threshold if direction == "min" else value > threshold)]
         result[metric] = {"mean": mean(values), "min": min(values), "max": max(values),

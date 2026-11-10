@@ -1,0 +1,487 @@
+{
+  "groups": {
+    "connectivity": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ],
+      "measured": 1,
+      "wall_mean": 2.078,
+      "wall_min": 2.078,
+      "wall_p50": 2.078,
+      "wall_max": 2.078,
+      "wall_p95": null,
+      "tokens_per_wall_second": [
+        1.92
+      ],
+      "visible_output_tokens": [
+        4
+      ],
+      "output_tokens": [
+        4
+      ],
+      "reasoning_tokens": [
+        0
+      ],
+      "service_ttft_ms": [
+        756
+      ]
+    },
+    "close_reasoning_low": {
+      "attempted": 5,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "measured": 5,
+      "wall_mean": 2.5688,
+      "wall_min": 2.125,
+      "wall_p50": 2.672,
+      "wall_max": 2.766,
+      "wall_p95": 2.7628,
+      "tokens_per_wall_second": [
+        5.82,
+        3.62,
+        6.32,
+        4.71,
+        5.99
+      ],
+      "visible_output_tokens": [
+        16,
+        10,
+        16,
+        10,
+        16
+      ],
+      "output_tokens": [
+        29,
+        10,
+        23,
+        10,
+        24
+      ],
+      "reasoning_tokens": [
+        13,
+        0,
+        7,
+        0,
+        8
+      ],
+      "service_ttft_ms": [
+        833,
+        977,
+        798,
+        669,
+        1081
+      ],
+      "correct": 5
+    },
+    "close_reasoning_medium": {
+      "attempted": 5,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "measured": 5,
+      "wall_mean": 3.1936,
+      "wall_min": 2.546,
+      "wall_p50": 3.172,
+      "wall_max": 3.766,
+      "wall_p95": 3.722,
+      "tokens_per_wall_second": [
+        5.04,
+        4.51,
+        4.25,
+        5.45,
+        6.28
+      ],
+      "visible_output_tokens": [
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "output_tokens": [
+        24,
+        39,
+        34,
+        41,
+        25
+      ],
+      "reasoning_tokens": [
+        8,
+        23,
+        18,
+        25,
+        9
+      ],
+      "service_ttft_ms": [
+        873,
+        1271,
+        1406,
+        803,
+        691
+      ],
+      "correct": 5
+    },
+    "seed_17": {
+      "attempted": 3,
+      "http_statuses": [
+        200,
+        200,
+        200
+      ],
+      "measured": 3,
+      "wall_mean": 3.3543333333333334,
+      "wall_min": 3.266,
+      "wall_p50": 3.343,
+      "wall_max": 3.454,
+      "wall_p95": 3.4429000000000003,
+      "tokens_per_wall_second": [
+        5.5,
+        5.68,
+        5.82
+      ],
+      "visible_output_tokens": [
+        19,
+        19,
+        19
+      ],
+      "output_tokens": [
+        58,
+        66,
+        58
+      ],
+      "reasoning_tokens": [
+        39,
+        47,
+        39
+      ],
+      "service_ttft_ms": [
+        1136,
+        820,
+        628
+      ],
+      "unique_reply_hashes": 3,
+      "errors": []
+    },
+    "seed_23": {
+      "attempted": 3,
+      "http_statuses": [
+        200,
+        200,
+        200
+      ],
+      "measured": 3,
+      "wall_mean": 3.5833333333333335,
+      "wall_min": 3.234,
+      "wall_p50": 3.25,
+      "wall_max": 4.266,
+      "wall_p95": 4.1644,
+      "tokens_per_wall_second": [
+        5.57,
+        4.92,
+        6.46
+      ],
+      "visible_output_tokens": [
+        18,
+        21,
+        21
+      ],
+      "output_tokens": [
+        58,
+        61,
+        64
+      ],
+      "reasoning_tokens": [
+        40,
+        40,
+        43
+      ],
+      "service_ttft_ms": [
+        715,
+        1260,
+        750
+      ],
+      "unique_reply_hashes": 3,
+      "errors": []
+    },
+    "cold_simultaneous": {
+      "attempted": 2,
+      "http_statuses": [
+        200,
+        200
+      ],
+      "measured": 2,
+      "wall_mean": 2.9375,
+      "wall_min": 2.422,
+      "wall_p50": 2.9375,
+      "wall_max": 3.453,
+      "wall_p95": 3.4014499999999996,
+      "tokens_per_wall_second": [
+        4.13,
+        3.19
+      ],
+      "visible_output_tokens": [
+        10,
+        11
+      ],
+      "output_tokens": [
+        10,
+        45
+      ],
+      "reasoning_tokens": [
+        0,
+        34
+      ],
+      "service_ttft_ms": [
+        740,
+        712
+      ],
+      "cached_uncached": [
+        [
+          2775,
+          15
+        ],
+        [
+          0,
+          2790
+        ]
+      ]
+    },
+    "warm_distinct_suffix": {
+      "attempted": 2,
+      "http_statuses": [
+        200,
+        200
+      ],
+      "measured": 2,
+      "wall_mean": 3.5780000000000003,
+      "wall_min": 3.25,
+      "wall_p50": 3.5780000000000003,
+      "wall_max": 3.906,
+      "wall_p95": 3.8731999999999998,
+      "tokens_per_wall_second": [
+        3.38,
+        2.82
+      ],
+      "visible_output_tokens": [
+        11,
+        11
+      ],
+      "output_tokens": [
+        53,
+        46
+      ],
+      "reasoning_tokens": [
+        42,
+        35
+      ],
+      "service_ttft_ms": [
+        640,
+        698
+      ],
+      "cached_uncached": [
+        [
+          2775,
+          15
+        ],
+        [
+          2775,
+          15
+        ]
+      ]
+    },
+    "generation_c1_1700": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ]
+    },
+    "generation_c1_2400": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ]
+    },
+    "generation_c2_1700": {
+      "attempted": 2,
+      "http_statuses": [
+        200,
+        200
+      ]
+    },
+    "generation_c2_2400": {
+      "attempted": 2,
+      "http_statuses": [
+        200,
+        200
+      ]
+    },
+    "generation_c4_1700": {
+      "attempted": 4,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    "generation_c4_2400": {
+      "attempted": 4,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    "calibration_control": {
+      "attempted": 3,
+      "http_statuses": [
+        200,
+        200,
+        200
+      ],
+      "measured": 3,
+      "wall_mean": 3.1149999999999998,
+      "wall_min": 2.485,
+      "wall_p50": 3.36,
+      "wall_max": 3.5,
+      "wall_p95": 3.486,
+      "tokens_per_wall_second": [
+        4.02,
+        2.86,
+        2.98
+      ],
+      "visible_output_tokens": [
+        10,
+        10,
+        10
+      ],
+      "output_tokens": [
+        16,
+        15,
+        19
+      ],
+      "reasoning_tokens": [
+        6,
+        5,
+        9
+      ],
+      "service_ttft_ms": [
+        753,
+        1558,
+        1600
+      ]
+    },
+    "calibration_LOW": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ],
+      "measured": 1,
+      "wall_mean": 2.703,
+      "wall_min": 2.703,
+      "wall_p50": 2.703,
+      "wall_max": 2.703,
+      "wall_p95": null,
+      "tokens_per_wall_second": [
+        1.48
+      ],
+      "visible_output_tokens": [
+        4
+      ],
+      "output_tokens": [
+        4
+      ],
+      "reasoning_tokens": [
+        0
+      ],
+      "service_ttft_ms": [
+        1272
+      ]
+    },
+    "calibration_MEDIUM": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ],
+      "measured": 1,
+      "wall_mean": 2.64,
+      "wall_min": 2.64,
+      "wall_p50": 2.64,
+      "wall_max": 2.64,
+      "wall_p95": null,
+      "tokens_per_wall_second": [
+        1.52
+      ],
+      "visible_output_tokens": [
+        4
+      ],
+      "output_tokens": [
+        4
+      ],
+      "reasoning_tokens": [
+        0
+      ],
+      "service_ttft_ms": [
+        870
+      ]
+    },
+    "calibration_HIGH": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ],
+      "measured": 1,
+      "wall_mean": 2.422,
+      "wall_min": 2.422,
+      "wall_p50": 2.422,
+      "wall_max": 2.422,
+      "wall_p95": null,
+      "tokens_per_wall_second": [
+        1.65
+      ],
+      "visible_output_tokens": [
+        4
+      ],
+      "output_tokens": [
+        4
+      ],
+      "reasoning_tokens": [
+        0
+      ],
+      "service_ttft_ms": [
+        777
+      ]
+    }
+  },
+  "calibration": [
+    {
+      "complexity": "LOW",
+      "observed_tokens": 2167,
+      "bytes_div_4": 2325.75,
+      "signed_percent_error": 7.325796031379788
+    },
+    {
+      "complexity": "MEDIUM",
+      "observed_tokens": 3991,
+      "bytes_div_4": 4256.0,
+      "signed_percent_error": 6.639939864695565
+    },
+    {
+      "complexity": "HIGH",
+      "observed_tokens": 5645,
+      "bytes_div_4": 5974.0,
+      "signed_percent_error": 5.8281665190434015
+    }
+  ]
+}

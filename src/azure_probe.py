@@ -1,6 +1,5 @@
 """Synthetic Azure P0 probes. Never submit corpus content."""
 from concurrent.futures import ThreadPoolExecutor
-from statistics import mean
 from uuid import uuid4
 from zipfile import ZipFile
 from xml.etree import ElementTree
@@ -14,6 +13,9 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
+
+from p0_config import load_config
+from run_manifest import code_revision, write_manifest
 
 ROOT = Path(__file__).resolve().parents[1]
 TASK = "Return a JSON object with decisions. Include one allow decision supported by evidence reference b1."
@@ -45,9 +47,11 @@ def settings():
     return {**env, **os.environ}
 
 
-def run(closeout=False):
-    config_data = (ROOT / "configs/p0.json").read_bytes()
-    config = json.loads(config_data)["azure"]
+def run(closeout=False, generation_only=False):
+    validated, config_data = load_config()
+    config = validated["azure"]
+    revision = code_revision()
+    source_sha256 = sha256(Path(__file__).read_bytes()).hexdigest()
     env = settings()
     endpoint = env["AZURE_OPENAI_ENDPOINT"].rstrip("/")
     parsed = urlsplit(endpoint)
@@ -69,7 +73,7 @@ def run(closeout=False):
         row = {"probe": label, "request_sha256": sha256(body).hexdigest(), "attempts": 1}
         start = time.monotonic()
         try:
-            with build_opener(NoRedirect()).open(request, timeout=config["timeout_seconds"]) as response:
+            with build_opener(NoRedirect()).open(request, timeout=config["generation_timeout_seconds"] if label.startswith("generation_") else config["timeout_seconds"]) as response:
                 row["http_status"] = response.status
                 row["rate_limit_headers"] = {k: v for k, v in response.headers.items()
                                              if k.lower().startswith(("x-ratelimit-", "retry-after")) and k.lower() != "x-ratelimit-key"}
@@ -113,7 +117,18 @@ def run(closeout=False):
         return row
 
     rows = [call("connectivity")]
-    if closeout and rows[0].get("http_status") == 200:
+    if generation_only and rows[0].get("http_status") == 200:
+        for concurrency in (1, 2, 4):
+            for budget in (1800, 2400):
+                prompt = ("Write a detailed fictional field guide with at least 100 numbered entries. "
+                          "Each entry describes a different imaginary plant, including its invented name, "
+                          "habitat, appearance, and pollinator. Write at least 25 words per entry. "
+                          "Start with entry 1 and continue without an introduction or summary.")
+                with ThreadPoolExecutor(max_workers=concurrency) as pool:
+                    rows.extend(pool.map(lambda _: call(f"generation_c{concurrency}_{budget}", prompt,
+                                                       max_completion_tokens=budget,
+                                                       reasoning_effort="low"), range(concurrency)))
+    elif closeout and rows[0].get("http_status") == 200:
         task = ("Clause A permits only supervisors to approve refunds above 5 on weekdays. "
                 "Clause B lets clerks approve refunds up to 9 on weekdays. Clause C applies only weekends. "
                 "A clerk approves 7 on Tuesday. Return exactly the clause permitting the action, "
@@ -182,18 +197,20 @@ def run(closeout=False):
         rows.append(call("cache_one_byte_changed", prefix=changed))
 
     report = {"config_sha256": sha256(config_data).hexdigest(),
-              "probe_source_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
+              "probe_source_sha256": source_sha256,
               "schema_sha256": sha256(json.dumps(SCHEMA, sort_keys=True).encode()).hexdigest(),
               "retry_policy": "single attempt; no retries in capability probes",
               "rows": rows}
     output = json.dumps(report, indent=2).replace(secret, "[REDACTED]")
-    filename = "azure-closeout.json" if closeout else "azure-capabilities.json"
+    filename = ("azure-generation.json" if generation_only else
+                "azure-closeout.json" if closeout else "azure-capabilities.json")
     (ROOT / "reports" / filename).write_text(output + "\n", encoding="utf-8")
+    write_manifest(ROOT / "reports" / filename.replace(".json", "-manifest.json"), json.loads(output), revision)
     print(f"Recorded {len(rows)} probe attempts.")
 
 
 if __name__ == "__main__":
     import sys
-    run("--closeout" in sys.argv[1:])
+    run("--closeout" in sys.argv[1:], "--generation-only" in sys.argv[1:])
 
 

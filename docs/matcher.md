@@ -1,0 +1,7 @@
+# P0 matcher contract
+
+Matching is performed within one document and one application-mode label category. The resolver maps draft source locator and quotation pairs to block and character spans. Unresolved locations contribute no span signal. A shared requirement ID scores 1. Disjoint explicit IDs exclude a pair. A normalized name or declared alias match scores 0.75. Overlapping spans in the same block score intersection over union. The strongest applicable signal is the partial-credit score. Ranking prefers shared IDs, then the strongest secondary evidence, then overlap, then name or alias.
+
+Only unique mutual-best pairs are accepted. Ties abstain and can be adjudicated. A split prediction can earn one partial match. A merged prediction can match at most one label. Equal duplicate predictions abstain and should also be counted by the duplicate detector. The primary recall denominator remains labelled items. Pair scores are separate partial-credit weights. They are not probabilities or precision estimates.
+
+Relations match by directed endpoints after both item endpoints are independently matched and by relation type. Classification is checked by the evaluation harness as a separate attribute. The 50-pair synthetic name audit contains 25 positives and 25 negatives. It does not measure live-engine matching on the corpus. An engine-to-key audit on natural outputs requires P1 evidence resolution and later extraction output.

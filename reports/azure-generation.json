@@ -1,0 +1,743 @@
+{
+  "config_sha256": "59cd8122cfc6b6edf379a610c6adab835fd145f28d4b1238d525f5451e6bdc24",
+  "probe_source_sha256": "b0bae3937fd0a89cd71cf90929ead171bb2045b4056733ac4be13134b69bcc69",
+  "schema_sha256": "6762dd10d4f7df1203dc385d6ac41601c8a1345b4560f49aac69e8e24cf87ead",
+  "retry_policy": "single attempt; no retries in capability probes",
+  "rows": [
+    {
+      "probe": "connectivity",
+      "request_sha256": "521f8efcacdb575622ac5481f4ebf2ef8fbde53096cbf66aedae5b91c8638f5c",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499989",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 15,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 5,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 10,
+          "engine_ttft_ms": 628,
+          "engine_ttlt_ms": 794,
+          "pre_inference_ms": 87,
+          "service_tbt_ms": 11,
+          "service_ttft_ms": 891,
+          "service_ttlt_ms": 1052,
+          "user_visible_ttft_ms": 804
+        },
+        "prompt_tokens": 11,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 26
+      },
+      "finish_reason": "stop",
+      "reply_sha256": "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3",
+      "wall_seconds": 2.422,
+      "non_reasoning_output_tokens": 10,
+      "non_reasoning_tokens_per_wall_second": 4.13
+    },
+    {
+      "probe": "generation_c1_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 31,
+          "engine_ttft_ms": 389,
+          "engine_ttlt_ms": 55809,
+          "pre_inference_ms": 147,
+          "service_tbt_ms": 31,
+          "service_ttft_ms": 771,
+          "service_ttlt_ms": 56190,
+          "user_visible_ttft_ms": 624
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 57.61,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c1_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 30,
+          "engine_ttft_ms": 1116,
+          "engine_ttlt_ms": 72034,
+          "pre_inference_ms": 131,
+          "service_tbt_ms": 30,
+          "service_ttft_ms": 1496,
+          "service_ttlt_ms": 72393,
+          "user_visible_ttft_ms": 1365
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 74.515,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c2_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 30,
+          "engine_ttft_ms": 1303,
+          "engine_ttlt_ms": 54527,
+          "pre_inference_ms": 130,
+          "service_tbt_ms": 30,
+          "service_ttft_ms": 1662,
+          "service_ttlt_ms": 54881,
+          "user_visible_ttft_ms": 1532
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 56.657,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c2_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 30,
+          "engine_ttft_ms": 307,
+          "engine_ttlt_ms": 54860,
+          "pre_inference_ms": 168,
+          "service_tbt_ms": 30,
+          "service_ttft_ms": 749,
+          "service_ttlt_ms": 55264,
+          "user_visible_ttft_ms": 581
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 57.157,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c2_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 32,
+          "engine_ttft_ms": 493,
+          "engine_ttlt_ms": 76348,
+          "pre_inference_ms": 119,
+          "service_tbt_ms": 32,
+          "service_ttft_ms": 868,
+          "service_ttlt_ms": 76720,
+          "user_visible_ttft_ms": 749
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 78.531,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c2_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 32,
+          "engine_ttft_ms": 367,
+          "engine_ttlt_ms": 77209,
+          "pre_inference_ms": 111,
+          "service_tbt_ms": 32,
+          "service_ttft_ms": 659,
+          "service_ttlt_ms": 77495,
+          "user_visible_ttft_ms": 548
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 79.546,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 34,
+          "engine_ttft_ms": 535,
+          "engine_ttlt_ms": 61180,
+          "pre_inference_ms": 101,
+          "service_tbt_ms": 34,
+          "service_ttft_ms": 877,
+          "service_ttlt_ms": 61516,
+          "user_visible_ttft_ms": 776
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 63.407,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 31,
+          "engine_ttft_ms": 491,
+          "engine_ttlt_ms": 56866,
+          "pre_inference_ms": 145,
+          "service_tbt_ms": 31,
+          "service_ttft_ms": 866,
+          "service_ttlt_ms": 57222,
+          "user_visible_ttft_ms": 721
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 58.969,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 31,
+          "engine_ttft_ms": 494,
+          "engine_ttlt_ms": 55515,
+          "pre_inference_ms": 98,
+          "service_tbt_ms": 31,
+          "service_ttft_ms": 845,
+          "service_ttlt_ms": 55837,
+          "user_visible_ttft_ms": 747
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 57.625,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_1800",
+      "request_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 1800,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1800,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 31,
+          "engine_ttft_ms": 468,
+          "engine_ttlt_ms": 56166,
+          "pre_inference_ms": 108,
+          "service_tbt_ms": 31,
+          "service_ttft_ms": 820,
+          "service_ttlt_ms": 56512,
+          "user_visible_ttft_ms": 712
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1863
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 58.516,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 33,
+          "engine_ttft_ms": 748,
+          "engine_ttlt_ms": 79687,
+          "pre_inference_ms": 94,
+          "service_tbt_ms": 33,
+          "service_ttft_ms": 1073,
+          "service_ttlt_ms": 79995,
+          "user_visible_ttft_ms": 979
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 81.89,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3498",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 31,
+          "engine_ttft_ms": 306,
+          "engine_ttlt_ms": 75286,
+          "pre_inference_ms": 88,
+          "service_tbt_ms": 31,
+          "service_ttft_ms": 629,
+          "service_ttlt_ms": 75601,
+          "user_visible_ttft_ms": 541
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 77.609,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3499",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 32,
+          "engine_ttft_ms": 741,
+          "engine_ttlt_ms": 76872,
+          "pre_inference_ms": 148,
+          "service_tbt_ms": 32,
+          "service_ttft_ms": 1068,
+          "service_ttlt_ms": 77193,
+          "user_visible_ttft_ms": 920
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 79.031,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    },
+    {
+      "probe": "generation_c4_2400",
+      "request_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "attempts": 1,
+      "http_status": 200,
+      "rate_limit_headers": {
+        "x-ratelimit-abusepenalty-active": "False",
+        "x-ratelimit-limit-requests": "3500",
+        "x-ratelimit-limit-tokens": "3500000",
+        "x-ratelimit-remaining-requests": "3498",
+        "x-ratelimit-remaining-tokens": "3499937",
+        "x-ratelimit-renewalperiod-requests": "60",
+        "x-ratelimit-renewalperiod-tokens": "60",
+        "x-ratelimit-reset-requests": "0",
+        "x-ratelimit-reset-tokens": "0"
+      },
+      "model": "gpt-6-astra-2026-09-03",
+      "usage": {
+        "completion_tokens": 2400,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2400,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 30,
+          "engine_ttft_ms": 323,
+          "engine_ttlt_ms": 72139,
+          "pre_inference_ms": 94,
+          "service_tbt_ms": 30,
+          "service_ttft_ms": 656,
+          "service_ttlt_ms": 72406,
+          "user_visible_ttft_ms": 562
+        },
+        "prompt_tokens": 63,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2463
+      },
+      "finish_reason": "length",
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 74.125,
+      "non_reasoning_output_tokens": 0,
+      "non_reasoning_tokens_per_wall_second": 0.0
+    }
+  ]
+}

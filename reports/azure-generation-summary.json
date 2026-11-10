@@ -1,0 +1,76 @@
+{
+  "groups": {
+    "connectivity": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ],
+      "measured": 1,
+      "wall_mean": 2.422,
+      "wall_min": 2.422,
+      "wall_p50": 2.422,
+      "wall_max": 2.422,
+      "wall_p95": null,
+      "tokens_per_wall_second": [
+        4.13
+      ],
+      "visible_output_tokens": [
+        10
+      ],
+      "output_tokens": [
+        15
+      ],
+      "reasoning_tokens": [
+        5
+      ],
+      "service_ttft_ms": [
+        891
+      ]
+    },
+    "generation_c1_1800": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ]
+    },
+    "generation_c1_2400": {
+      "attempted": 1,
+      "http_statuses": [
+        200
+      ]
+    },
+    "generation_c2_1800": {
+      "attempted": 2,
+      "http_statuses": [
+        200,
+        200
+      ]
+    },
+    "generation_c2_2400": {
+      "attempted": 2,
+      "http_statuses": [
+        200,
+        200
+      ]
+    },
+    "generation_c4_1800": {
+      "attempted": 4,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    "generation_c4_2400": {
+      "attempted": 4,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  },
+  "calibration": []
+}

@@ -1,0 +1,191 @@
+{
+  "code_revision_at_run_start": "7cd30c8f5bd776e4a3975bca62a44bc520ce8c8a",
+  "config_sha256": "59cd8122cfc6b6edf379a610c6adab835fd145f28d4b1238d525f5451e6bdc24",
+  "schema_sha256": "6762dd10d4f7df1203dc385d6ac41601c8a1345b4560f49aac69e8e24cf87ead",
+  "probe_source_sha256": "b0bae3937fd0a89cd71cf90929ead171bb2045b4056733ac4be13134b69bcc69",
+  "service_models": [
+    "gpt-6-astra-2026-09-03"
+  ],
+  "token_ledger": [
+    {
+      "stage": "connectivity",
+      "prompt_and_parameters_sha256": "521f8efcacdb575622ac5481f4ebf2ef8fbde53096cbf66aedae5b91c8638f5c",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 2.422,
+      "cached_input": 0,
+      "uncached_input": 11,
+      "output": 15,
+      "reasoning": 5
+    },
+    {
+      "stage": "generation_c1_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 57.61,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c1_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 74.515,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    },
+    {
+      "stage": "generation_c2_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 56.657,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c2_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 57.157,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c2_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 78.531,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    },
+    {
+      "stage": "generation_c2_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 79.546,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    },
+    {
+      "stage": "generation_c4_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 63.407,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c4_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 58.969,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c4_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 57.625,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c4_1800",
+      "prompt_and_parameters_sha256": "71412588a6b9af47abd5735448c40589de1a7eadc28a36a4babc729c7d554811",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 58.516,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 1800,
+      "reasoning": 1800
+    },
+    {
+      "stage": "generation_c4_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 81.89,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    },
+    {
+      "stage": "generation_c4_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 77.609,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    },
+    {
+      "stage": "generation_c4_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 79.031,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    },
+    {
+      "stage": "generation_c4_2400",
+      "prompt_and_parameters_sha256": "bc28a181d6170746e663c0c2404fa72d31c9cbada9e4b7d6893c2bbbff52e8b4",
+      "model": "gpt-6-astra-2026-09-03",
+      "http_status": 200,
+      "attempts": 1,
+      "wall_seconds": 74.125,
+      "cached_input": 0,
+      "uncached_input": 63,
+      "output": 2400,
+      "reasoning": 2400
+    }
+  ]
+}

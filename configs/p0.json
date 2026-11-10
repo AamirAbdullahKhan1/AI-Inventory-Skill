@@ -21,7 +21,8 @@
     "concurrency": 2,
     "timeout_seconds": 60,
     "max_attempts": 1,
-    "reasoning_effort": "low"
+    "reasoning_effort": "low",
+    "generation_timeout_seconds": 240
   },
   "gate_timeout_seconds": 7200
 }

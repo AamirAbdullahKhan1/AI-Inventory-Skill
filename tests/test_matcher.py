@@ -25,3 +25,10 @@ class MatcherTests(unittest.TestCase):
         relation = dict(category="relation", source="A", target="B", type="precedes")
         self.assertEqual(match([relation], [relation]), [(0, 0, 1)])
         self.assertEqual(match([dict(relation, source="B", target="A")], [relation]), [])
+
+    def test_shared_requirement_id_is_disambiguated_by_alias(self):
+        labels = [
+            dict(category="rule", requirement_ids=["R"], name="send alert"),
+            dict(category="rule", requirement_ids=["R"], name="archive report"),
+        ]
+        self.assertEqual(match([labels[1]], labels), [(0, 1, 1)])
